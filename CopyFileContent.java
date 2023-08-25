@@ -4,6 +4,8 @@ public class CopyFileContent {
 				try {
 						File inf = new File("input01.txt");
 						File outf = new File("output01.txt");
+						if(outf.createNewFile())
+								System.out.println("Created new file");
 						FileReader in = new FileReader(inf);
 						FileWriter out = new FileWriter(outf);
 						int ch;
@@ -13,7 +15,7 @@ public class CopyFileContent {
 						out.close();
 				}
 				catch (IOException e) {
-						System.out.println("Error while closing!!");
+						System.out.println("Error!!");
 				}
 		}
 }
