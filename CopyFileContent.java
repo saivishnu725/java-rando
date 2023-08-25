@@ -4,7 +4,7 @@ public class CopyFileContent {
 				try {
 						File inf = new File("input01.txt");
 						File outf = new File("output01.txt");
-						if(outf.createNewFile())
+						if(outf.createNewFile() || inf.createNewFile())
 								System.out.println("Created new file");
 						FileReader in = new FileReader(inf);
 						FileWriter out = new FileWriter(outf);
