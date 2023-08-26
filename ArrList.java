@@ -11,9 +11,11 @@ class ArrList {
 				i.add(2);
 				Iterator<Integer> ii = i.iterator();
 				while(ii.hasNext())
-						System.out.println(ii.next());
+						System.out.print(ii.next() + " " );
+				System.out.println();
 				Iterator<String> si = s.iterator();
 				while(si.hasNext())
 						System.out.print(si.next());
+				System.out.println();
 		}
 }
