@@ -18,7 +18,7 @@ public class FindIPGUI {
 
 				// create label
 				JLabel olabel = new JLabel();
-				olabel.setBounds(50, 150, 100, 40);
+				olabel.setBounds(50, 150, 200, 80);
 
 				// create button
 				JButton button = new JButton(" Convert ");
